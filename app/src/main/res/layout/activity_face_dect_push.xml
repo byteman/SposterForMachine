@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.cloudwalk.view.CameraSurfaceView
+        android:id="@+id/textureview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/copyright_iv"
+        android:layout_width="67.5dp"
+        android:layout_height="18.5dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+    <FrameLayout
+        android:id="@+id/carema_mask_fl"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top">
+
+
+        <TextView
+            android:id="@+id/face_timer_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="6"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/face_timer_cycle_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:src="@drawable/cloudwalk_face_main_circle" />
+    </FrameLayout>
+
+    <cn.cloudwalk.view.CustomViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+
+        android:background="@drawable/cloudwalk_face_main_camera_mask_bottom" />
+
+    </LinearLayout>
+</FrameLayout>

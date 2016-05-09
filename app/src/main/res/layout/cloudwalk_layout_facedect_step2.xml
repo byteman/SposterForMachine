@@ -1,0 +1,35 @@
+<LinearLayout 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    
+    android:orientation="vertical"
+  >
+
+        
+
+         <TextView
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="请确保光线\n充足,且头像处于取景框中!"
+                android:lines="2"
+               
+                
+               android:textSize="24sp"
+        android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@id/cloudwalk_step1_start_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/cloudwalk_face_main_start"
+                android:text="取消"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+</LinearLayout>

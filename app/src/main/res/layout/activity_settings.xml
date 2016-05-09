@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cn.cloudwalk.sposterformachine.activity.SettingsActivity">
+
+    <RelativeLayout
+        android:id="@+id/set_serveraddr_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/set_serveraddr_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务器地址:" />
+
+        <EditText
+            android:id="@+id/set_serveraddr"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/set_serveraddr_t"
+            android:inputType="textWebEditText" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_threshold_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_serveraddr_layout">
+
+        <TextView
+            android:id="@+id/set_threshold_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="人脸识别阈值:" />
+
+        <EditText
+            android:id="@+id/set_threshold"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/set_threshold_t"
+            android:inputType="text|number" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_class_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_threshold_layout">
+
+        <TextView
+            android:id="@+id/set_class_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活体等级:" />
+
+        <Spinner
+            android:id="@+id/set_class"
+            android:entries="@array/live_class"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/set_class_t" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/set_save"
+        android:text="保 存"
+        android:layout_below="@id/set_class_layout"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

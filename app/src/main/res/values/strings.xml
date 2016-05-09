@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">速递易柜机</string>
+    <string name="action_settings">settings</string>
+    <string name="copyright">Copyright @ 2015 云从科技 版权所有</string>
+    <string name="next">下一步</string>
+
+    <!-- 设置页面 -->
+    <string name="preference_save_location">服务器地址</string>
+    <string name="preference_save_location_summary">人脸比对服务器IP地址</string>
+    <string name="preference_score">人脸阈值</string>
+    <string name="preference_score_summary">阈值分数</string>
+
+    <!-- 结果提示页面提示语句 -->
+
+    <string name="facedect_fail">检测失败</string>
+    <string name="facedect_ok">检测成功</string>
+    <string name="face_verfy_fail">验证失败</string>
+    <string name="face_verfy_ok">验证成功</string>
+    <string name="facedect_fail_tip">抱歉,人脸注册失败</string>
+    <string name="face_verfy_fail_tip">抱歉,人脸注册失败!</string>
+    <string name="facedectfail_missface">请保持人脸在取景框中!</string>
+    <string name="facedectfail_shake">请不要晃动!</string>
+    <string name="facedectfail_timeout">检测超时!</string>
+    <string name="facedectfail_noface">抱歉,您未按图示将人脸放入取景框中!</string>
+    <string name="facedect_ok_tip">检测成功,感谢您的配合!</string>
+    <string name="facedec_net_fail">网络连接失败,请检查网络后再试!</string>
+    <string name="facedectfail_appid">appid/appSecret认证不成功</string>
+    <string name="face_verfy_ok_tip">验证成功,感谢您的配合!</string>
+</resources>
